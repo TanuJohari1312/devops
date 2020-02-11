@@ -1,0 +1,10 @@
+version: '3.7'
+services: 
+  web1:
+          image: alpine
+          container_name: tanjC1
+          ports:
+            - "4565:80"
+          volumes:
+            - ./htmlcode:/usr/share/nginx/html
+  
